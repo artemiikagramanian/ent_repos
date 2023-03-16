@@ -20,7 +20,7 @@ try:
             GPIO.output(dac, bin_10(num))
         else:
             print ("enter an integer NUMBER in [0, 255]")
-            break
+            continue
 
         print (3.3*num/256)
 
