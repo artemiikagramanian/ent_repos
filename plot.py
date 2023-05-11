@@ -1,15 +1,19 @@
 import matplotlib.pyplot as plt
 
-with open("data.txt", "r") as f:
-    data_x = []
-    data_y = []
-    for x in f.readlines():
-        spis = []
-        spis = list(map(float, x.split()))
-        data_x.append(spis[0])
-        data_y.append(spis[1])
+data = []
 
-print(data_x)
-print(data_y)
-plt.plot(data_x, data_y, ".")
+with open("data.txt", "r") as f:
+    f.readline()
+    for x in f.readlines():
+        spis = list(map(float, x.split()))
+        data.append(spis[0])
+
+print(77.47699)
+print(77.47699/len(data))
+print( len(data)/82 )
+
+plt.plot(data, ".")
 plt.show()
+
+f.close()
+

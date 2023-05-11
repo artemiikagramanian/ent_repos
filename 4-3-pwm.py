@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 def dec2bin( a ):
     return [int (digit) for digit in bin(a)[2:].zfill(8)]
 
-shim_pin = 14
+shim_pin = 27
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(shim_pin, GPIO.OUT )
 
